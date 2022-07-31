@@ -73,7 +73,7 @@ class Evaluate:
       The result of evaluated postfix expression.
     """
     self.stack = []
-       for element in expression:
+      for element in expression:
            if element.isdigit():
                self.push(int(element))
            elif element in ["+", "-", "*", "/", "^"]:
