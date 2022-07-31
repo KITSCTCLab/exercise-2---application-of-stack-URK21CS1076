@@ -59,10 +59,10 @@ class Evaluate:
     Returns:
       True if the expression is valid, else returns False.
     """
-     operands = [element for element in expression if element.isdigit()]
-     operators = [element for element in expression if element in ["+", "-", "*", "/", "^"]]
-         if (len(operands) + len(operators)) == len(expression) and len(operands) == len(operators) + 1:
-            return expression[0] not in operators and expression[1] not in operators
+  operands = [element for element in expression if element.isdigit()]
+  operators = [element for element in expression if element in ["+", "-", "*", "/", "^"]]
+      if (len(operands) + len(operators)) == len(expression) and len(operands) == len(operators) + 1:
+          return expression[0] not in operators and expression[1] not in operators
 
   def evaluate_postfix_expression(self, expression):
     """
